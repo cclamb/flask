@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script>
+      function get_id(id) {
+        console.log('id: ' + id);
+      }
+      var url = window.location.href;
+      var pos = url.indexOf("id=") + 3;
+      var len = url.length;
+      var id = url.substring(pos, len);
+      eval('get_id(' + id.toString() + ')');
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
