@@ -8,7 +8,9 @@
       var pos = url.indexOf("id=") + 3;
       var len = url.length;
       var id = url.substring(pos, len);
-      eval('get_id(' + id.toString() + ')');
+      var eval_string = 'get_id(' + id.toString() + ')';
+      console.log(eval_string);
+      eval(eval_string);
     </script>
   </head>
   <body>
